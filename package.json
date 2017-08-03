@@ -1,0 +1,25 @@
+{
+  "name": "er-number",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": "Andrea Ascari",
+  "license": "MIT",
+  "files": ["lib"],
+  "scripts": {
+    "clean": "rm -rf lib && mkdir lib",
+    "build": "npm run clean && tsc",
+    "dev": "npm run clean && tsc --watch",
+    "test": "npm -p run build && ts-mocha test/test.ts"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "typescript": "2.4.2"
+  },
+  "dependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/lodash": "^4.14.71",
+    "@types/mocha": "^2.2.41",
+    "mocha": "^3.5.0",
+    "ts-mocha": "^1.0.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "er-number-example",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack src/index.js dist/bundle.js && open index.html"
+  },
+  "devDependencies": {
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
+    "er-number": "../../"
+  }
+}
